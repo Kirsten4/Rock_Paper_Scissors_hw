@@ -14,3 +14,8 @@ def compare(player_1_choice, player_2_choice):
     game = Game()
     winner = game.compare_choices(player_1,player_2)
     return render_template("index.html", title="Game", player_1=player_1, player_2=player_2, winner=winner )
+
+@app.route("/welcome")
+def welcome():
+    return render_template("welcome.html", title="Welcome")
+    
