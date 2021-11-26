@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <header>
+            <h1>Rock 💎 Paper 📄 Scissors ✂️</h1>
+        </header>
+        <p>Player 1 chooses {{ player_1.choice }}</p>
+        <p>Player 2 chooses {{ player_2.choice }}</p>
+        </section>
+        <header>
+            <h3>And the result is:</h3>
+        </header>
+        <section>
+            {% if winner != None %}
+                {{ winner.name }} wins by playing {{ winner.choice }}
+            {% else %}
+                It's a draw! Both players picked {{player_1.choice}}
+            {% endif %}
+        </section>
+    </body>
+</html>
