@@ -3,7 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;  
 }
 
-nav a {
+a {
     background-color: rgb(146, 17, 43);
     color: white;
     padding: 10px;
@@ -11,9 +11,14 @@ nav a {
     text-align: center;
 }
 
+div{
+    margin-bottom: 30px;;
+}
+
 h1 {
     text-align: center;
 }
+
 
 #header_1 {
     grid-area: header_1;
@@ -40,8 +45,9 @@ h1 {
     grid-area: footer_1;
     background-color: rgb(146, 17, 43);
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
     color: white;
+    font-size: 20px;
     
 }
 
