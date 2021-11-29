@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form action="/result" method="post">
+        <label for="player_1_choice">Choose:</label>
+        <select name="player_1_choice" id="player_1_choice">
+            <option value="rock">rock</option>
+            <option value="paper">paper</option>
+            <option value="scissors">scissors</option>
+        </select>
+        <input type="submit" id="submit", value="Play">
+    </form>
+   
+
+{% endblock content %}

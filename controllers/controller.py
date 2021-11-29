@@ -19,8 +19,12 @@ def compare_url(player_1_choice, player_2_choice):
 def welcome():
     return render_template("welcome.html", title="Welcome")
 
-@app.route("/play", methods=["POST"])
+@app.route("/play")
 def play():
+    return render_template("play.html", title="play")
+
+@app.route("/result", methods=["POST"])
+def result():
     player_choice = request.form["player_1_choice"]
     player_choice = player_choice.lower()
     print(player_choice)
