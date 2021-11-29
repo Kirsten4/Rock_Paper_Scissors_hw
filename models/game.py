@@ -1,5 +1,7 @@
 from random import randint
 
+from models.player import Player
+
 class Game:
 
     def compare_choices(self,player_1,player_2):
@@ -24,7 +26,12 @@ class Game:
     def random_computer_choice(self):
         choice_list=["rock", "paper", "scissors"]
         rand_int = randint(0,2)
-        return choice_list[rand_int]
+        computer_choice = choice_list[rand_int]
+        computer_player = Player("Computer",computer_choice)
+        return computer_player
+
+
+
 
 
 

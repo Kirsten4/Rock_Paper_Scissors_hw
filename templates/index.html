@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <p>Player 1 chooses {{ player_1.choice }}</p>
-    <p>Player 2 chooses {{ player_2.choice }}</p>
+    <p>{{ player_1.name }} chooses {{ player_1.choice }}</p>
+    <p>{{ player_2.name }} chooses {{ player_2.choice }}</p>
     <header>
         <h3>And the result is:</h3>
     </header>

@@ -45,7 +45,7 @@ h1 {
     grid-area: footer_1;
     background-color: rgb(146, 17, 43);
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
     color: white;
     font-size: 20px;
     
@@ -60,4 +60,17 @@ h1 {
     grid-template-columns: 2fr 8fr;
     grid-template-rows: 2fr 7fr 1fr;
 
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+#submit {
+    background-color: rgb(146, 17, 43);
+    color: white;
+    border-radius: 8px;
+    border-color: white;
+    padding: 5px;
+    margin-left: 10px;
 }

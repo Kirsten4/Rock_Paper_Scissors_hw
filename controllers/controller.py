@@ -28,11 +28,9 @@ def result():
     player_choice = request.form["player_1_choice"]
     player_choice = player_choice.lower()
     print(player_choice)
-    player_1= Player("Player 1",player_choice)
+    player_1= Player(request.form["player_1_name"],player_choice)
     game = Game()
-    computer_choice = game.random_computer_choice()
-    print(computer_choice)
-    player_2 = Player("Computer",computer_choice)
+    player_2 = game.random_computer_choice()
     winner = game.compare_choices(player_1,player_2)
     return render_template("index.html", title="Game", player_1=player_1, player_2=player_2, winner=winner )
 
